@@ -1,21 +1,21 @@
 spring:
-  datasource:
-    # H2
-    # url: jdbc:h2:tcp://localhost/~/jpashop
-    # username: sa
-    # password:
-    # driver-class-name: org.h2.Driver
+  # datasource:
+  # H2
+  # url: jdbc:h2:tcp://localhost/~/jpashop
+  # username: sa
+  # password:
+  # driver-class-name: org.h2.Driver
 
-    #    # local postgres
-    #    url: jdbc:postgresql://localhost:5432/postgres
-    #    username: minn
-    #    password:
-    #    driver-class-name: org.postgresql.Driver
+  #    # local postgres
+  #    url: jdbc:postgresql://localhost:5432/postgres
+  #    username: minn
+  #    password:
+  #    driver-class-name: org.postgresql.Driver
 
-    # # docker postgres
-    # url: jdbc:postgresql://db:5432/postgres
-    # username: postgres
-    # password: n1234
+  # # docker postgres
+  # url: jdbc:postgresql://db:5432/postgres
+  # username: postgres
+  # password: n1234
 
   #  redis:
   #    host: localhost
