@@ -9,6 +9,6 @@ COPY ./back.sh /usr/src/run.sh
 COPY . .
 
 # gradle 빌드 시 proxy 설정을 gradle.properties에 추가
-RUN echo "systemProp.http.proxyHost=krmp-proxy.9rum.cc\nsystemProp.http.proxyPort=3128\nsystemProp.https.proxyHost=krmp-proxy.9rum.cc\nsystemProp.https.proxyPort=3128" > /root/.gradle/gradle.properties
+RUN ./gradlew build && echo "systemProp.http.proxyHost=krmp-proxy.9rum.cc\nsystemProp.http.proxyPort=3128\nsystemProp.https.proxyHost=krmp-proxy.9rum.cc\nsystemProp.https.proxyPort=3128" > /root/.gradle/gradle.properties
 
 CMD ["bash", "/usr/src/run.sh"]
