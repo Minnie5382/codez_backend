@@ -60,8 +60,8 @@ cloud:
     stack:
       auto: false
     credentials:
-      accessKey: AKIAYS2NP6MD6XPIEFNI
-      secretKey: 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
+      accessKey: ${env:/Users/minn/Desktop/goorm/kram_test/codez_backend/.env/AWS_ACCESS_KEY}
+      secretKey: ${env:/Users/minn/Desktop/goorm/kram_test/codez_backend/.env/AWS_SECRET_ACCESS_KEY}
 
 springdoc:
   swagger-ui:
