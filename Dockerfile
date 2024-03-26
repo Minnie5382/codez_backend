@@ -1,5 +1,5 @@
 # gradle:8.5-jdk21 이미지를 기반으로 함
-FROM krmp-d2hub-idock.9rum.cc/goorm/gradle:8.5-jdk21
+FROM gradle:8.5-jdk21
 
 VOLUME /usr/src/app
 WORKDIR /usr/src/app
