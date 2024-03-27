@@ -11,9 +11,9 @@ COPY . .
 # gradle 빌드 시 proxy 설정을 gradle.properties에 추가
 RUN echo "systemProp.http.proxyHost=krmp-proxy.9rum.cc\nsystemProp.http.proxyPort=3128\nsystemProp.https.proxyHost=krmp-proxy.9rum.cc\nsystemProp.https.proxyPort=3128" > /root/.gradle/gradle.properties
 
-RUN ./gradlew build
-RUN sleep 4
+# ./gradlew build
+# RUN sleep 4
 
 # RUN java -jar ./build/libs/*SNAPSHOT.jar
 
-CMD ["java", "-jar", "/usr/src/app/build/libs/*SNAPSHOT.jar"]
+CMD ["./gradlew build && sleep 4 && java -jar /usr/src/app/build/libs/*SNAPSHOT.jar"]
